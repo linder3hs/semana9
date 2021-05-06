@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1QY-qn-hjw">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="test9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Loa-GE-dnV">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yPc-pe-qkf">
+                                <rect key="frame" x="181" y="435" width="52" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RQa-Ho-1Ic">
+                                <rect key="frame" x="0.0" y="44" width="414" height="216"/>
+                            </pickerView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urO-EH-8Kn">
+                                <rect key="frame" x="181" y="501" width="52" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="urO-EH-8Kn" firstAttribute="top" secondItem="yPc-pe-qkf" secondAttribute="bottom" constant="39.5" id="3px-EY-jI1"/>
+                            <constraint firstItem="RQa-Ho-1Ic" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9ZH-eo-DNq"/>
+                            <constraint firstItem="RQa-Ho-1Ic" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NV0-1P-Uvt"/>
+                            <constraint firstItem="Loa-GE-dnV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Slb-yb-cnj"/>
+                            <constraint firstItem="yPc-pe-qkf" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bH8-dC-xwm"/>
+                            <constraint firstItem="RQa-Ho-1Ic" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dan-ON-X5J"/>
+                            <constraint firstItem="yPc-pe-qkf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9M-di-SES"/>
+                            <constraint firstItem="Loa-GE-dnV" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="f3U-ov-FUa"/>
+                            <constraint firstItem="urO-EH-8Kn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="v7d-r3-QRw"/>
+                            <constraint firstItem="Loa-GE-dnV" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="yrG-OF-vEf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryPicker" destination="Loa-GE-dnV" id="ulV-yJ-Fgq"/>
+                        <outlet property="fruitsPicker" destination="RQa-Ho-1Ic" id="zAF-Bq-8fl"/>
+                        <outlet property="lblFruit" destination="urO-EH-8Kn" id="TxE-Ec-XmW"/>
+                        <outlet property="lblText" destination="yPc-pe-qkf" id="NZ2-kc-0z8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-243" y="52"/>
+        </scene>
+        <!--Example View Controller-->
+        <scene sceneID="D7w-1t-xgH">
+            <objects>
+                <viewController id="klH-IW-om8" customClass="ExampleViewController" customModule="test9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OZN-Id-UfX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ftC-Y6-3O2">
+                                <rect key="frame" x="20" y="74" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Kl-rA-NZQ">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="dhD-Sa-ijv"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dhD-Sa-ijv" firstAttribute="trailing" secondItem="ftC-Y6-3O2" secondAttribute="trailing" constant="20" id="4mo-cl-Mnt"/>
+                            <constraint firstItem="ftC-Y6-3O2" firstAttribute="leading" secondItem="dhD-Sa-ijv" secondAttribute="leading" constant="20" id="8UH-Lo-HnL"/>
+                            <constraint firstItem="dhD-Sa-ijv" firstAttribute="bottom" secondItem="2Kl-rA-NZQ" secondAttribute="bottom" id="JnZ-FN-MOG"/>
+                            <constraint firstItem="2Kl-rA-NZQ" firstAttribute="leading" secondItem="dhD-Sa-ijv" secondAttribute="leading" id="Shn-lX-QSr"/>
+                            <constraint firstItem="ftC-Y6-3O2" firstAttribute="top" secondItem="dhD-Sa-ijv" secondAttribute="top" constant="30" id="hTM-JF-e1Y"/>
+                            <constraint firstItem="2Kl-rA-NZQ" firstAttribute="trailing" secondItem="dhD-Sa-ijv" secondAttribute="trailing" id="ofU-sd-2GJ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="codeNumbers" destination="2Kl-rA-NZQ" id="tk4-66-G3V"/>
+                        <outlet property="inputCodeNumber" destination="ftC-Y6-3O2" id="A4t-O7-KHz"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eiP-n3-ZzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="491" y="48"/>
+        </scene>
+        <!--Poke Api View Controller-->
+        <scene sceneID="26C-6q-F2U">
+            <objects>
+                <viewController id="1QY-qn-hjw" customClass="PokeApiViewController" customModule="test9" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iCB-W4-MWS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="JHh-6L-gJF">
+                                <rect key="frame" x="20" y="74" width="374" height="34"/>
+                                <color key="textColor" red="0.94275027509999998" green="0.45056169419999997" blue="0.43527000869999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tva-8h-LWc">
+                                <rect key="frame" x="0.0" y="646" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Nhx-mJ-S0C"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JHh-6L-gJF" firstAttribute="top" secondItem="Nhx-mJ-S0C" secondAttribute="top" constant="30" id="1fB-PS-KlK"/>
+                            <constraint firstItem="tva-8h-LWc" firstAttribute="leading" secondItem="Nhx-mJ-S0C" secondAttribute="leading" id="Fnw-eD-Bbn"/>
+                            <constraint firstItem="tva-8h-LWc" firstAttribute="trailing" secondItem="Nhx-mJ-S0C" secondAttribute="trailing" id="KRr-cl-E0o"/>
+                            <constraint firstItem="Nhx-mJ-S0C" firstAttribute="trailing" secondItem="JHh-6L-gJF" secondAttribute="trailing" constant="20" id="afA-DX-UAL"/>
+                            <constraint firstItem="tva-8h-LWc" firstAttribute="bottom" secondItem="Nhx-mJ-S0C" secondAttribute="bottom" id="bUL-GF-8zx"/>
+                            <constraint firstItem="JHh-6L-gJF" firstAttribute="leading" secondItem="Nhx-mJ-S0C" secondAttribute="leading" constant="20" id="h78-lg-9Wc"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="pokeListPicker" destination="tva-8h-LWc" id="rJC-1i-1wu"/>
+                        <outlet property="pokeTextField" destination="JHh-6L-gJF" id="7UB-eO-WVg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VYQ-kU-uEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304" y="43"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
